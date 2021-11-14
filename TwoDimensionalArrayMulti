@@ -1,0 +1,38 @@
+
+#include <stdio.h>
+
+int main()
+{
+    
+    int a[10][10],n,m,i,j,mul=1;
+    printf("enter the two row and column\n");
+    scanf("%d",&n);
+    scanf("%d",&m);
+    printf("enter the actual element of an array\n");
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    
+    printf("the matrix elemnt of an array\n");
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            printf("%d\t",a[i][j]);
+        }
+        printf("\n");
+    }
+    
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            mul = mul*a[i][j];
+        }
+    }
+printf("the matrix multiplication=%d",mul);
+    return 0;
+}
