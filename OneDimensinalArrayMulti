@@ -1,0 +1,27 @@
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a[10],n,i,mul=1;
+    printf("enter the number of elemetn you want to add ");
+    scanf("%d",&n);
+    printf("enter the element each element\n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("the element of  an array is\n");
+    for(i=0;i<n;i++)
+    {
+        printf("%d\t",a[i]);
+    }
+
+  for(i=0;i<n;i++)
+  {
+      mul  = mul*a[i];
+  }
+printf("the multiplication is=%d",mul);
+    return 0;
+}
